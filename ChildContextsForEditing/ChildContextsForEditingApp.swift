@@ -13,7 +13,7 @@ struct ChildContextsForEditingApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ItemList()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

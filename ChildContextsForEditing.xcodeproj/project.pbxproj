@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		73338087262E9D700035FF57 /* ChildContextsForEditingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73338086262E9D700035FF57 /* ChildContextsForEditingApp.swift */; };
-		73338089262E9D700035FF57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73338088262E9D700035FF57 /* ContentView.swift */; };
+		73338089262E9D700035FF57 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73338088262E9D700035FF57 /* ItemList.swift */; };
 		7333808B262E9D770035FF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7333808A262E9D770035FF57 /* Assets.xcassets */; };
 		7333808E262E9D770035FF57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7333808D262E9D770035FF57 /* Preview Assets.xcassets */; };
 		73338090262E9D770035FF57 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333808F262E9D770035FF57 /* Persistence.swift */; };
 		73338093262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73338091262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld */; };
+		7333809C262E9E620035FF57 /* ItemCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333809B262E9E620035FF57 /* ItemCreationView.swift */; };
+		7333809F262EA2890035FF57 /* ItemHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333809E262EA2890035FF57 /* ItemHost.swift */; };
+		733380A2262EACD50035FF57 /* Binding+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733380A1262EACD40035FF57 /* Binding+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73338083262E9D700035FF57 /* ChildContextsForEditing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildContextsForEditing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73338086262E9D700035FF57 /* ChildContextsForEditingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildContextsForEditingApp.swift; sourceTree = "<group>"; };
-		73338088262E9D700035FF57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73338088262E9D700035FF57 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 		7333808A262E9D770035FF57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7333808D262E9D770035FF57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7333808F262E9D770035FF57 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		73338092262E9D770035FF57 /* ChildContextsForEditing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChildContextsForEditing.xcdatamodel; sourceTree = "<group>"; };
 		73338094262E9D770035FF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7333809B262E9E620035FF57 /* ItemCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreationView.swift; sourceTree = "<group>"; };
+		7333809E262EA2890035FF57 /* ItemHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHost.swift; sourceTree = "<group>"; };
+		733380A1262EACD40035FF57 /* Binding+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +63,14 @@
 			isa = PBXGroup;
 			children = (
 				73338086262E9D700035FF57 /* ChildContextsForEditingApp.swift */,
-				73338088262E9D700035FF57 /* ContentView.swift */,
+				73338088262E9D700035FF57 /* ItemList.swift */,
+				7333809E262EA2890035FF57 /* ItemHost.swift */,
+				7333809B262E9E620035FF57 /* ItemCreationView.swift */,
 				7333808A262E9D770035FF57 /* Assets.xcassets */,
 				7333808F262E9D770035FF57 /* Persistence.swift */,
 				73338094262E9D770035FF57 /* Info.plist */,
 				73338091262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld */,
+				733380A1262EACD40035FF57 /* Binding+.swift */,
 				7333808C262E9D770035FF57 /* Preview Content */,
 			);
 			path = ChildContextsForEditing;
@@ -145,8 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				73338090262E9D770035FF57 /* Persistence.swift in Sources */,
-				73338089262E9D700035FF57 /* ContentView.swift in Sources */,
+				7333809C262E9E620035FF57 /* ItemCreationView.swift in Sources */,
+				73338089262E9D700035FF57 /* ItemList.swift in Sources */,
 				73338087262E9D700035FF57 /* ChildContextsForEditingApp.swift in Sources */,
+				7333809F262EA2890035FF57 /* ItemHost.swift in Sources */,
+				733380A2262EACD50035FF57 /* Binding+.swift in Sources */,
 				73338093262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
