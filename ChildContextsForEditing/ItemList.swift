@@ -10,10 +10,8 @@ import CoreData
 
 struct ItemList: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-        entity: Item.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.title, ascending: false)]
-    ) private var items: FetchedResults<Item>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.title)]) private var items: FetchedResults<Item>
+    
     @State private var showingCreation = false
 
     var body: some View {
@@ -21,7 +19,7 @@ struct ItemList: View {
             List {
                 ForEach(items, id: \.self) { item in
                     NavigationLink(
-                        destination: itemHost(with: item.objectID),
+                        destination: makeItemHost(with: item.objectID),
                         label: {
                             Text(item.title ?? "Unknown Item")
                         })
@@ -31,7 +29,7 @@ struct ItemList: View {
             .navigationBarTitle("Items", displayMode: .inline)
             .navigationBarItems(trailing: plusButton)
             .sheet(isPresented: $showingCreation) {
-                itemCreation()
+                makeItemCreationView()
             }
         }
     }
@@ -46,7 +44,7 @@ struct ItemList: View {
 
     // MARK: Helpers
     
-    private func itemCreation() -> some View {
+    private func makeItemCreationView() -> some View {
         let childContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         childContext.parent = viewContext
         let childItem = Item(context: childContext)
@@ -54,7 +52,7 @@ struct ItemList: View {
             .environment(\.managedObjectContext, childContext)
     }
     
-    private func itemHost(with objectID: NSManagedObjectID) -> some View {
+    private func makeItemHost(with objectID: NSManagedObjectID) -> some View {
         let childContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         childContext.parent = viewContext
         let childItem = childContext.object(with: objectID) as! Item

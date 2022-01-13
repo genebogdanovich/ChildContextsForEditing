@@ -21,7 +21,7 @@ struct ItemHost: View {
                 Form {
                     Section {
                         // Make sure to set default empty string on `name` attribute in model editor or else it will crash.
-                        TextField("Title", text: $item.title.optionalProxy()!)
+                        TextField("Title", text: Binding($item.title)!)
                     }
                 }
             } else {
@@ -63,7 +63,7 @@ struct ItemHost: View {
     }
     
     private func cancelChanges() {
-        childContext.refresh(item, mergeChanges: false)
+        childContext.rollback()
         toggleEditingMode()
     }
     

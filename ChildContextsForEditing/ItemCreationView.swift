@@ -16,7 +16,7 @@ struct ItemCreationView: View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Title", text: $item.title.optionalProxy()!)
+                    TextField("Title", text: Binding($item.title)!)
                 }
             }
             .navigationBarTitle("New Item", displayMode: .inline)

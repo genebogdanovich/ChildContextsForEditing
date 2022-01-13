@@ -15,7 +15,6 @@
 		73338093262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73338091262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld */; };
 		7333809C262E9E620035FF57 /* ItemCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333809B262E9E620035FF57 /* ItemCreationView.swift */; };
 		7333809F262EA2890035FF57 /* ItemHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333809E262EA2890035FF57 /* ItemHost.swift */; };
-		733380A2262EACD50035FF57 /* Binding+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733380A1262EACD40035FF57 /* Binding+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		73338094262E9D770035FF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7333809B262E9E620035FF57 /* ItemCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreationView.swift; sourceTree = "<group>"; };
 		7333809E262EA2890035FF57 /* ItemHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHost.swift; sourceTree = "<group>"; };
-		733380A1262EACD40035FF57 /* Binding+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,6 @@
 				7333808F262E9D770035FF57 /* Persistence.swift */,
 				73338094262E9D770035FF57 /* Info.plist */,
 				73338091262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld */,
-				733380A1262EACD40035FF57 /* Binding+.swift */,
 				7333808C262E9D770035FF57 /* Preview Content */,
 			);
 			path = ChildContextsForEditing;
@@ -158,7 +155,6 @@
 				73338089262E9D700035FF57 /* ItemList.swift in Sources */,
 				73338087262E9D700035FF57 /* ChildContextsForEditingApp.swift in Sources */,
 				7333809F262EA2890035FF57 /* ItemHost.swift in Sources */,
-				733380A2262EACD50035FF57 /* Binding+.swift in Sources */,
 				73338093262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,7 +288,7 @@
 				DEVELOPMENT_TEAM = LBC5DS5WB6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChildContextsForEditing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +310,7 @@
 				DEVELOPMENT_TEAM = LBC5DS5WB6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChildContextsForEditing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
