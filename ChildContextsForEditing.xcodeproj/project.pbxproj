@@ -13,8 +13,9 @@
 		7333808E262E9D770035FF57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7333808D262E9D770035FF57 /* Preview Assets.xcassets */; };
 		73338090262E9D770035FF57 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333808F262E9D770035FF57 /* Persistence.swift */; };
 		73338093262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73338091262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld */; };
-		7333809C262E9E620035FF57 /* ItemCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333809B262E9E620035FF57 /* ItemCreationView.swift */; };
-		7333809F262EA2890035FF57 /* ItemHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333809E262EA2890035FF57 /* ItemHost.swift */; };
+		7391CEC727D6967500D68BB7 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391CEC627D6967500D68BB7 /* ItemDetail.swift */; };
+		7391CEC927D696E200D68BB7 /* DataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391CEC827D696E200D68BB7 /* DataOperation.swift */; };
+		7391CECB27D6972900D68BB7 /* ItemEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391CECA27D6972900D68BB7 /* ItemEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		7333808F262E9D770035FF57 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		73338092262E9D770035FF57 /* ChildContextsForEditing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChildContextsForEditing.xcdatamodel; sourceTree = "<group>"; };
 		73338094262E9D770035FF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7333809B262E9E620035FF57 /* ItemCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreationView.swift; sourceTree = "<group>"; };
-		7333809E262EA2890035FF57 /* ItemHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHost.swift; sourceTree = "<group>"; };
+		7391CEC627D6967500D68BB7 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		7391CEC827D696E200D68BB7 /* DataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperation.swift; sourceTree = "<group>"; };
+		7391CECA27D6972900D68BB7 /* ItemEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,9 @@
 			children = (
 				73338086262E9D700035FF57 /* ChildContextsForEditingApp.swift */,
 				73338088262E9D700035FF57 /* ItemList.swift */,
-				7333809E262EA2890035FF57 /* ItemHost.swift */,
-				7333809B262E9E620035FF57 /* ItemCreationView.swift */,
+				7391CEC627D6967500D68BB7 /* ItemDetail.swift */,
+				7391CECA27D6972900D68BB7 /* ItemEditor.swift */,
+				7391CEC827D696E200D68BB7 /* DataOperation.swift */,
 				7333808A262E9D770035FF57 /* Assets.xcassets */,
 				7333808F262E9D770035FF57 /* Persistence.swift */,
 				73338094262E9D770035FF57 /* Info.plist */,
@@ -150,11 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7391CEC727D6967500D68BB7 /* ItemDetail.swift in Sources */,
+				7391CEC927D696E200D68BB7 /* DataOperation.swift in Sources */,
 				73338090262E9D770035FF57 /* Persistence.swift in Sources */,
-				7333809C262E9E620035FF57 /* ItemCreationView.swift in Sources */,
 				73338089262E9D700035FF57 /* ItemList.swift in Sources */,
 				73338087262E9D700035FF57 /* ChildContextsForEditingApp.swift in Sources */,
-				7333809F262EA2890035FF57 /* ItemHost.swift in Sources */,
+				7391CECB27D6972900D68BB7 /* ItemEditor.swift in Sources */,
 				73338093262E9D770035FF57 /* ChildContextsForEditing.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
